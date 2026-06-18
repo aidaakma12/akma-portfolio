@@ -699,6 +699,10 @@ img { max-width: 100%; display: block; }
 }
 .cert-note {
   margin-top: 24px;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
 
 /* ============================
    SKILLS
