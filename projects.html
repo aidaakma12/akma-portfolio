@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Akma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Akma</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="section-inner">
+    <p class="section-eyebrow">Projects</p>
+    <h1 class="page-title">Things I've built &amp; investigated</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="project-grid">
+
+      <article class="project-card featured">
+        <div class="project-tag">Final Year Project</div>
+        <h3>Vishing Detection System</h3>
+        <p class="project-domain">AI / ML &middot; Audio &amp; Text Classification</p>
+        <p>
+          A hybrid system for detecting voice phishing (vishing) in Malay-language phone calls.
+          Combines MFCC + GaussianNB for audio analysis with Whisper speech-to-text + TF-IDF +
+          MultinomialNB for transcript analysis, fused with a weighted scoring formula
+          (0.8 × Text + 0.2 × Audio) to classify calls as Fraudulent, Suspicious, or Safe.
+        </p>
+        <ul class="project-stats">
+          <li><strong>96.87%</strong> accuracy</li>
+          <li><strong>32</strong> test samples</li>
+          <li><strong>Tiered</strong> keyword scoring</li>
+        </ul>
+        <div class="project-tools">
+          <span>Python</span><span>Whisper STT</span><span>scikit-learn</span><span>NLP</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">Forensics</div>
+        <h3>Live Disk Forensic Analysis</h3>
+        <p class="project-domain">Digital Forensics</p>
+        <p>
+          Conducted live analysis on the NIST CFReDS "Hacking Case" dataset using Autopsy 4.21.0,
+          covering NTFS/MFT structures, file system artifacts, event logs, and Windows Registry
+          examination.
+        </p>
+        <div class="project-tools"><span>Autopsy</span><span>NTFS</span><span>Windows Registry</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">Forensics</div>
+        <h3>Insider Breach Evidence Plan</h3>
+        <p class="project-domain">Incident Response</p>
+        <p>
+          Designed an adaptive evidence collection plan for a simulated insider breach at a
+          fictional company, analyzing PCAP captures, email artifacts, USB logs, and CSV data
+          to reconstruct the incident timeline.
+        </p>
+        <div class="project-tools"><span>PCAP Analysis</span><span>Evidence Handling</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">Forensics</div>
+        <h3>Memory Forensics — Cridex Malware</h3>
+        <p class="project-domain">Malware Analysis</p>
+        <p>
+          Performed memory forensics on a Cridex malware-infected memory dump using Volatility,
+          identifying malicious processes, network connections, and injected code artifacts.
+        </p>
+        <div class="project-tools"><span>Volatility</span><span>Memory Analysis</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">AI / Algorithms</div>
+        <h3>Campus Route Navigation (Search Algorithms)</h3>
+        <p class="project-domain">Artificial Intelligence</p>
+        <p>
+          Implemented and compared four classic search algorithms — BFS, DFS, Greedy Best-First,
+          and A* — to solve a campus route navigation problem in Python, with a group
+          presentation breaking down each algorithm's trade-offs.
+        </p>
+        <div class="project-tools"><span>Python</span><span>BFS/DFS</span><span>A* Search</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">Network Security</div>
+        <h3>AI-Driven Election Cybersecurity Threats</h3>
+        <p class="project-domain">Threat Evaluation &amp; Policy</p>
+        <p>
+          Group evaluation of four defensive technologies — Zero Trust Architecture, FIDO2/WebAuthn,
+          SIEM + UEBA, and C2PA + STIR/SHAKEN — applied to securing elections against AI-enabled
+          threats, including disinformation and deepfakes.
+        </p>
+        <div class="project-tools"><span>ZTA</span><span>SIEM</span><span>FIDO2</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2026 Nor Aida Akma. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
