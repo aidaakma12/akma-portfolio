@@ -747,6 +747,82 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================
+   CAREER DEVELOPMENT
+   ============================ */
+.career-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.career-block {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+.career-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.career-badge {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 100px;
+}
+.career-badge.short {
+  background: var(--color-accent-soft);
+  color: var(--color-accent-dark);
+  border: 1px solid var(--color-accent);
+}
+.career-badge.long {
+  background: var(--color-ink);
+  color: #fff;
+}
+.career-timeframe {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+.career-goals {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.career-goal {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.goal-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-alt);
+  border-radius: 10px;
+}
+.career-goal h3 {
+  font-size: 0.98rem;
+  color: var(--color-ink);
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+.career-goal p {
+  font-size: 0.88rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ============================
    CONTACT
    ============================ */
 .contact-section {
@@ -814,6 +890,7 @@ img { max-width: 100%; display: block; }
   .cert-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .preview-grid { grid-template-columns: repeat(2, 1fr); }
+  .career-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
